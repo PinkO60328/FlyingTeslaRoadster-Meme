@@ -8,14 +8,10 @@ nav{position:sticky;top:42px;z-index:9;display:flex;align-items:center;justify-c
 .btn{display:inline-block;padding:.75rem 1.6rem;border-radius:40px;background:linear-gradient(90deg,var(--pink),var(--purple));color:#fff;font-weight:900;text-decoration:none;cursor:pointer;box-shadow:0 0 18px var(--pink);transition:.2s}.btn:hover{transform:scale(1.06);box-shadow:0 0 30px var(--teal)}
 .ghost{background:transparent;border:2px solid var(--teal);box-shadow:0 0 12px var(--teal)}
 .hero{position:relative}
-.bannerbox{position:relative;aspect-ratio:16/9;width:100%;overflow:hidden;background:#02030a}
+.bannerbox{position:relative;aspect-ratio:2170/725;width:100%;overflow:hidden;background:#02030a}
 .bannerbox picture,.bannerbox img{position:absolute;inset:0;width:100%;height:100%;display:block}
-.bannerbox img{object-fit:cover;object-position:center}
-.banner-overlay{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:clamp(1.2rem,4vw,3.5rem);max-width:min(720px,92%);pointer-events:none;background:linear-gradient(90deg,rgba(2,3,10,.82) 0%,rgba(2,3,10,.45) 55%,transparent 100%)}
-.bo-title{font-family:Orbitron,sans-serif;font-weight:900;font-size:clamp(1.35rem,4.2vw,3.1rem);line-height:1.08;letter-spacing:.04em;color:#fff;text-shadow:0 2px 4px rgba(0,0,0,.9),0 0 18px rgba(232,32,42,.75),0 0 36px rgba(127,216,255,.35)}
-.bo-ticker{font-family:Orbitron,sans-serif;font-weight:900;font-size:clamp(1.6rem,5vw,3.4rem);color:var(--pink);margin-top:.35rem;text-shadow:0 2px 4px rgba(0,0,0,.9),0 0 20px var(--pink)}
-.bo-live{margin-top:.55rem;display:inline-block;padding:.35rem .9rem;border-radius:999px;background:#627eea;color:#fff;font-weight:900;font-size:clamp(.85rem,2vw,1.05rem);letter-spacing:.04em;box-shadow:0 0 16px rgba(98,126,234,.8),0 2px 6px rgba(0,0,0,.6)}
-.herotxt{text-align:center;padding:0 5% 3rem;margin-top:-90px;position:relative;z-index:3}
+.bannerbox img{object-fit:contain;object-position:center}
+.herotxt{text-align:center;padding:0 5% 3rem;margin-top:-50px;position:relative;z-index:3}
 .herotxt .lead{max-width:700px;margin:0 auto 1.5rem;font-size:1.1rem}
 .logobox{width:180px;aspect-ratio:1;margin:0 auto;border-radius:50%;overflow:hidden;border:4px solid var(--teal);box-shadow:0 0 30px var(--pink)}.logobox img{object-fit:cover}
 .logobox.big{width:100%;max-width:420px;border-radius:20px}
@@ -31,7 +27,7 @@ h2{font-family:Orbitron,sans-serif;font-weight:400;text-align:center;font-size:c
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:1rem}
 .gi{aspect-ratio:1;border-radius:16px;overflow:hidden;border:2px solid var(--purple);box-shadow:0 0 14px var(--purple)}.gi img{object-fit:cover;transition:.3s}.gi:hover img{transform:scale(1.08)}
 footer{text-align:center;padding:3rem 6%;border-top:2px solid var(--pink);background:#02030a}footer img{width:80px;height:80px;object-fit:cover;border-radius:50%;margin:0 auto 1rem}footer p{opacity:.75;margin:1rem auto;max-width:700px;font-size:.9rem}
-@media(max-width:800px){.links{display:none}.two{grid-template-columns:1fr}.bannerbox{aspect-ratio:4/5}.herotxt{margin-top:-60px}.logobox{width:130px}.banner-overlay{max-width:100%;padding:1.1rem 1.2rem;background:linear-gradient(180deg,rgba(2,3,10,.75) 0%,rgba(2,3,10,.35) 50%,transparent 100%);justify-content:flex-end;padding-bottom:1.6rem}.bo-title{font-size:clamp(1.15rem,6vw,1.8rem)}.bo-ticker{font-size:clamp(1.4rem,7vw,2.2rem)}}
+@media(max-width:800px){.links{display:none}.two{grid-template-columns:1fr}.herotxt{margin-top:-40px}.logobox{width:130px}}
 h1{font-weight:900}.copy{color:#05070f}
 .stars{position:fixed;inset:0;z-index:-1;background:radial-gradient(1px 1px at 20% 30%,#fff,transparent),radial-gradient(1px 1px at 70% 80%,#fff,transparent),radial-gradient(2px 2px at 40% 60%,#cfe8ff,transparent),radial-gradient(1px 1px at 90% 20%,#fff,transparent),radial-gradient(1.5px 1.5px at 55% 15%,#fff,transparent);background-size:300px 300px;animation:tw 60s linear infinite}
 @keyframes tw{to{background-position:300px 600px}}
