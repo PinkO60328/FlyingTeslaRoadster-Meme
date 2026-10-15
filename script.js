@@ -6,3 +6,4 @@ document.querySelectorAll(".tglink").forEach(a=>{a.href=TELEGRAM_LINK});
 document.querySelectorAll(".chain").forEach(e=>{e.textContent=e.closest(".alertbar")?CHAIN.toUpperCase():CHAIN});
 document.querySelectorAll(".ca").forEach(e=>e.textContent=CONTRACT_ADDRESS);
 document.querySelectorAll(".copy").forEach(b=>b.onclick=()=>{navigator.clipboard.writeText(CONTRACT_ADDRESS);const t=b.textContent;b.textContent="Copied!";setTimeout(()=>b.textContent=t,1500)});
+document.querySelectorAll(".scan").forEach(a=>{if(valid){a.href="https://etherscan.io/token/"+CONTRACT_ADDRESS;a.target="_blank";a.rel="noopener"}else{a.style.display="none"}});

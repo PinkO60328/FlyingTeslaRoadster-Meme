@@ -36,3 +36,5 @@ h1{font-weight:900}.copy{color:#05070f}
 .badge{display:inline-flex;align-items:center;gap:.4rem;padding:.4rem 1rem;border-radius:30px;background:#627eea;font-weight:900;margin:1rem 0 .3rem;box-shadow:0 0 16px #627eea}.badge.sm{margin:0;padding:.2rem .7rem;font-size:.85rem}
 .c2{display:flex;width:fit-content;margin:-1.5rem auto 2rem}
 @media(max-width:800px){.alertbar{font-size:.7rem}}
+
+.scan{color:var(--teal);font-weight:900;border:1px solid var(--teal);border-radius:8px;padding:.35rem .8rem;text-decoration:none}.scan:hover{background:rgba(0,255,200,.15)}
